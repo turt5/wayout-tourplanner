@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1020.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.DonationPageController">
+    <children>
+        <AnchorPane prefHeight="130.0" prefWidth="1020" style="-fx-background-color: #8ebb9a; -fx-text-fill: white">
+            <children>
+                <Label alignment="CENTER" layoutY="43.0" prefWidth="1020" style="-fx-font-size: 22px; -fx-text-fill: white; -fx-font-family: 'Arial Rounded MT Bold';" text="Donate" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutY="225.0" prefHeight="300" prefWidth="1020">
+            <children>
+                <Label alignment="CENTER" layoutX="2.0" layoutY="103.0" prefWidth="1020" style="-fx-padding: 10px; -fx-font-size: 18px;" text="To Donate, Use bKash Send Money option and send to this number given below. Thanks for staying with wayout!" wrapText="true" />
+                <Label alignment="CENTER" layoutX="2.0" layoutY="150.0" prefWidth="1020" style="-fx-padding: 10px; -fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #e55f00;" text="bKash personal: +8801738439423" wrapText="true" />
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

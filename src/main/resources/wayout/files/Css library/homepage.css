@@ -1,0 +1,34 @@
+.login-button{
+    -fx-background-color: linear-gradient(to right, #00bf8f, #001510);
+    -fx-text-fill: white;
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 13px;
+    -fx-font-weight: Bold;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 80px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: pointer;
+    transition-duration: 0.7s;
+}
+.login-button:hover{
+    -fx-background-color: linear-gradient(to right, #00e2b3, #747775);
+}
+.icon-labels{
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-size: 13px;
+    -fx-font-weight: Bold;
+}
+.Ntext{
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-weight: Bold;
+    -fx-font-size: 20px;
+}
+.searchBox{
+    -fx-background-color: #00c79d;
+    -fx-text-fill: White;
+    -fx-font-family: 'Poppins', sans-serif;
+    -fx-font-weight: Bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+
+}

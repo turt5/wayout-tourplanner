@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_panel" prefHeight="750.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.ClientChatController">
+    <AnchorPane prefHeight="40.0" prefWidth="1020">
+        <Label fx:id="clientName" alignment="CENTER" prefHeight="75.0" prefWidth="1020" style="-fx-background-color: red; -fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 20px; -fx-text-fill: white">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="95.0" />
+            </font></Label>
+    </AnchorPane>
+    <MFXScrollPane hbarPolicy="NEVER" layoutY="70.0" prefHeight="587.0" prefWidth="1020">
+        <VBox fx:id="messageBodyVbox" prefWidth="1018" style="-fx-background-color: #ffffff" />
+    </MFXScrollPane>
+    <AnchorPane layoutY="653.0" prefHeight="98.0" prefWidth="1020" style="-fx-background-color: Black;">
+        <MFXTextField fx:id="messageBox" floatMode="DISABLED" layoutX="250" layoutY="25" prefHeight="50" prefWidth="500" promptText="Write a message to send .." style="-fx-padding: 0 0 0 10px; -fx-font-size: 13px" />
+
+
+        <MFXButton fx:id="sendBtn" layoutX="770" layoutY="25" prefHeight="50" prefWidth="100" style="-fx-background-color: white" text=" ">
+            <graphic>
+                <FontAwesomeIconView fill="black" glyphName="SEND" size="18" />
+            </graphic>
+        </MFXButton>
+    </AnchorPane>
+
+</AnchorPane>

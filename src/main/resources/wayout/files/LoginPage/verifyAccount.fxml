@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.LoginPage.VerifyAccount">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Confirmation.png" />
+         </image>
+      </ImageView>
+      <MFXTextField fx:id="verificationCode" floatMode="DISABLED" layoutX="673.0" layoutY="249.0" prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: White; -fx-border-radius: 10; -fx-background-radius: 10;">
+         <font>
+            <Font size="14.0" />
+         </font></MFXTextField>
+      <MFXButton fx:id="confirm" layoutX="673.0" layoutY="330.0" onAction="#confirmClicked" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #ffca40; -fx-background-radius: 10; -fx-border-radius: 10;" text="Confirm ">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </MFXButton>
+   </children>
+</AnchorPane>

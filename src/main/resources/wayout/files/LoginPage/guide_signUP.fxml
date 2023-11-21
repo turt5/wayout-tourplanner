@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.LoginPage.GuideSignUpController">
+    <children>
+        <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/Signup.png" />
+            </image>
+        </ImageView>
+        <MFXButton fx:id="backButton" layoutX="573.0" layoutY="40.0" onAction="#backButtonClicked" style="-fx-background-color: #ffca40;" text="&lt; Back">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </MFXButton>
+        <MFXTextField fx:id="fnameBox" floatMode="BORDER" floatingText="  First name" layoutX="675.0" layoutY="192.0" prefHeight="50.0" prefWidth="170.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" />
+        <MFXTextField fx:id="emailBox" floatMode="BORDER" floatingText="  Email address" layoutX="675.0" layoutY="256.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" />
+        <MFXTextField fx:id="lNameBox" floatMode="BORDER" floatingText="  Last name" layoutX="855.0" layoutY="192.0" prefHeight="50.0" prefWidth="170.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" />
+        <MFXPasswordField fx:id="passwordBox" floatMode="BORDER" floatingText="  Password" layoutX="675.0" layoutY="393.0" prefHeight="50.0" prefWidth="350.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+        <MFXPasswordField fx:id="cPasswordBox" floatMode="BORDER" floatingText="  Confirm password" layoutX="675.0" layoutY="462.0" prefHeight="50.0" prefWidth="350.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+        <MFXDatePicker fx:id="dateofBirth" floatMode="BORDER" floatingText="  Date of birth" layoutX="675.0" layoutY="325.0" prefHeight="50.0" prefWidth="170.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+        <MFXComboBox fx:id="gender" editable="false" floatingText="  Gender" layoutX="855.0" layoutY="325.0" prefHeight="50.0" prefWidth="170.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+        <MFXButton fx:id="signUP" layoutX="675.0" layoutY="541.0" onAction="#signUPClicked" prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #ffca40;" text="Sign up">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </MFXButton>
+        <Label layoutX="675.0" layoutY="621.0" prefHeight="17.0" prefWidth="200.0" text="By clicking Sign Up, you agree to our" />
+        <Hyperlink layoutX="871.0" layoutY="618.0" text="terms and privacy policy" />
+        <Label layoutX="675.0" layoutY="641.0" prefHeight="17.0" prefWidth="340.0" text="You may recieve notifications from us and can opt out anytime." />
+
+        <ImageView fx:id="loginImageLogo" fitHeight="406.0" fitWidth="475.0" layoutX="51.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/Login-rafiki.png" />
+            </image></ImageView>
+        <Label layoutX="67.0" layoutY="522.0" prefHeight="48.0" prefWidth="371.0" text="Get ready for your next tour with us!" textFill="#e5ff00">
+            <font>
+                <Font name="Segoe UI" size="19.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

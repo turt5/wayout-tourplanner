@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.Guide.GuideProfileController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="510.0" layoutY="151.0" radius="67.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="GuideName" alignment="CENTER" layoutX="151.0" layoutY="235.0" prefHeight="18.0" prefWidth="718.0" text="Kaium Al Limon">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="GuideLocation" alignment="CENTER" layoutX="151.0" layoutY="268.0" prefHeight="18.0" prefWidth="718.0" text="Dhaka Bangladesh">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="77.0" prefWidth="1020.0" styleClass="Header_BG" stylesheets="@../CSS.css">
+         <children>
+            <Label layoutX="415.0" layoutY="12.0" prefHeight="56.0" prefWidth="190.0" text="Guide Profile">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="304.0" prefHeight="200.0" prefWidth="1020.0" styleClass="guide_info" stylesheets="@../CSS.css">
+         <children>
+            <Label alignment="CENTER" layoutX="22.0" layoutY="6.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="187.0" prefWidth="974.0" stylesheets="@../CSS.css" text="Bangladesh is my passion, and Traveling is in my blood! This is why I've been sharing this tremendous unspoiled, undiscovered country with you, providing handpicked, tailor-made, off-the-beaten tours to almost every corner of Bangladesh for nearly ten years.Some of my clients have since returned, and some refer their friends to me. I hope you will also feel satisfied with my professional service and quality. Don't hesitate with the price of my tour packages. You may find similar trips at a lower price offered by others. But before booking with them, you should always consider two facts. Firstly you may visit Bangladesh only once in your lifetime—secondly, the Quality and Professional Service. And as you know, &quot;Better Things Demands Higher Prices&quot;." wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="503.0" prefHeight="202.0" prefWidth="1020.0" styleClass="guide_info" stylesheets="@../CSS.css">
+         <children>
+            <Label layoutX="25.0" layoutY="25.0" text="Overall Rating : ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="159.0" layoutY="27.0">
+               <image>
+                  <Image url="@../../images/favourites.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="186.0" layoutY="28.0">
+               <image>
+                  <Image url="@../../images/favourites.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="215.0" layoutY="27.0">
+               <image>
+                  <Image url="@../../images/favourites.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="242.0" layoutY="28.0">
+               <image>
+                  <Image url="@../../images/favourites.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="58.0" text="Languages :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="58.0" text="Bangla, Hindi, English">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="90.0" text="TOURS GIVEN :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="90.0" text="5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="120.0" text="Guide ID :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="120.0" text="#3744">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="900.0" layoutY="157.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="105.0" stylesheets="@../CSS.css" text="Hire ME">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="13.0" layoutY="715.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" stylesheets="@../CSS.css" text="&lt; Back" />
+   </children>
+</AnchorPane>

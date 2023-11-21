@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1020.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.JoinGuide">
+    <children>
+        <ImageView fx:id="imageview" fitHeight="200.0" fitWidth="200.0" layoutX="50.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+        <AnchorPane prefHeight="100.0" prefWidth="1020.0" style="-fx-background-color: #6db784;">
+            <children>
+                <Label layoutX="398.0" layoutY="23.0" prefHeight="56.0" prefWidth="255.0" text="Join as a Guide" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="268.0" layoutY="109.0" prefHeight="26.0" prefWidth="128.0" text="Name">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="nameBox" floatMode="DISABLED" layoutX="265.0" layoutY="138.0" prefHeight="35.0" prefWidth="700.0" promptText="Enter Your Full Name" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <Label layoutX="268.0" layoutY="182.0" prefHeight="26.0" prefWidth="128.0" text="City / Town">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="cityBox" floatMode="DISABLED" layoutX="265.0" layoutY="211.0" prefHeight="35.0" prefWidth="700.0" promptText="Your available area." style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <Label layoutX="268.0" layoutY="254.0" prefHeight="26.0" prefWidth="128.0" text="E-mail">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="mailBox" floatMode="DISABLED" layoutX="265.0" layoutY="283.0" prefHeight="35.0" prefWidth="700.0" promptText="abc@gmail.com" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <Label layoutX="268.0" layoutY="330.0" prefHeight="26.0" prefWidth="128.0" text="Mobile No">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="phoneBox" floatMode="DISABLED" layoutX="265.0" layoutY="359.0" prefHeight="35.0" prefWidth="700.0" promptText="+8801*********" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <MFXButton fx:id="cancelBtn" layoutX="788.0" layoutY="696.0" onAction="#cancelClicked" prefHeight="39.0" prefWidth="86.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" text="Cancel">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="17.0" />
+            </font>
+        </MFXButton>
+        <MFXButton fx:id="applyBtn" layoutX="885.0" layoutY="696.0" onAction="#applyClicked" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color: #f9e45b; -fx-border-radius: 10; -fx-border-color: #ffca40; -fx-background-radius: 10;" text="Apply">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="17.0" />
+            </font>
+        </MFXButton>
+        <Label layoutX="582.0" layoutY="702.0" prefHeight="26.0" prefWidth="200.0" text="Admin will contact you soon." textFill="#8c8484">
+            <font>
+                <Font name="Arial" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="267.0" layoutY="404.0" prefHeight="26.0" prefWidth="128.0" text="Personal details in short">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="bloodBox" floatMode="DISABLED" layoutX="265.0" layoutY="431.0" prefHeight="35.0" prefWidth="700.0" promptText="Write your details within 100 words." style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" textLimit="500">
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </MFXTextField>
+        <MFXButton fx:id="upload_photo" layoutX="67.0" layoutY="369.0" style="-fx-border-color: Gray; -fx-background-color: #f9e45b; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Upload Your Photo">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </MFXButton>
+      <Label layoutX="267.0" layoutY="477.0" prefHeight="26.0" prefWidth="177.0" text="NID /  Passport Number">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="nidBox" floatMode="DISABLED" layoutX="265.0" layoutY="504.0" prefHeight="35.0" prefWidth="700.0" promptText="*********" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </MFXTextField>
+      <Label layoutX="267.0" layoutY="548.0" prefHeight="26.0" prefWidth="177.0" text="Hourly Charge">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="chargeBox" floatMode="DISABLED" layoutX="265.0" layoutY="575.0" prefHeight="35.0" prefWidth="700.0" promptText="................." style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </MFXTextField>
+      <Label layoutX="267.0" layoutY="618.0" prefHeight="26.0" prefWidth="177.0" text="Available Time">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <MFXTextField fx:id="timeBox" floatMode="DISABLED" layoutX="265.0" layoutY="645.0" prefHeight="35.0" prefWidth="700.0" promptText="10:00 AM- 6:00 PM" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;">
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </MFXTextField>
+    </children>
+</AnchorPane>

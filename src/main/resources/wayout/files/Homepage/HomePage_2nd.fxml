@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Homepage.HomePage_2nd_Controller">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/wayout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="119.0" fitWidth="114.0" layoutX="810.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="119.0" fitWidth="114.0" layoutX="802.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="95.0" fitWidth="94.0" layoutX="819.0" layoutY="204.0" onMouseClicked="#tripsClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/travel-itinerary.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="98.0" layoutX="1054.0" layoutY="203.0" onMouseClicked="#transportClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/transportation_2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="836.0" layoutY="304.0" text="Explore">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1081.0" layoutY="304.0" text="Trips">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="946.0" layoutY="207.0" onMouseClicked="#guideClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/tour.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="964.0" layoutY="305.0" text="Guide">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="signUP" layoutX="880.0" layoutY="520.0" onAction="#signUPClicked" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <Hyperlink fx:id="aboutUs" layoutX="952.0" layoutY="630.0" onAction="#aboutUsClicked" style="-fx-text-fill: #f9e45b;" text="About us" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <MFXButton fx:id="signIn1" layoutX="878.0" layoutY="375.0" onAction="#signInClicked" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Sign In as a Traveller">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="signIn11" layoutX="879.0" layoutY="423.0" onAction="#GuideLoginClicked" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Sign In as a Guide">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="signIn111" layoutX="879.0" layoutY="471.0" onAction="#signInClicked" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Sign In as a Admin">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+   </children>
+</AnchorPane>

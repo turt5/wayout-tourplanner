@@ -1,0 +1,17 @@
+.textAre {
+    -fx-border-color: transparent;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20;
+    /*-fx-border-width: 2px;*/
+    -fx-background-color: gray;
+    -fx-font-size: 13px
+}
+
+.textAre:focused{
+    -fx-border-color: transparent;
+    /*-fx-border-radius: 20px;*/
+    -fx-background-radius: 20;
+    /*-fx-border-width: 2px;*/
+    -fx-background-color: white;
+    -fx-font-size: 13px
+}

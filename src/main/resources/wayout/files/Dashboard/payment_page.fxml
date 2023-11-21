@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.BookPackageController">
+    <children>
+        <AnchorPane prefHeight="74.0" prefWidth="1020" styleClass="Header_BG" stylesheets="@CSS.css">
+            <Label alignment="CENTER" layoutX="14.0" layoutY="21.0" prefWidth="1000" style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 25px" text="Booking Payment" textAlignment="CENTER" />
+        </AnchorPane>
+        <MFXScrollPane hbarPolicy="NEVER" layoutX="0" layoutY="74.0" prefHeight="676.0" prefWidth="1020">
+            <VBox fx:id="booking_vbox" prefHeight="1100.0" prefWidth="1015" style="-fx-background-color: #ffffff">
+                <children>
+                    <AnchorPane prefHeight="141.0" prefWidth="1015">
+                        <children>
+                            <Label layoutX="20" layoutY="5" style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px" text="Billing Details" />
+                            <Label layoutX="600" layoutY="5" style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px" text="Additional info" />
+
+                            <Label layoutX="20" layoutY="50" style="-fx-font-size: 13px ; -fx-text-fill: gray" text="Full name *" />
+                            <MFXTextField fx:id="full_name" floatMode="DISABLED" layoutX="20" layoutY="75" prefHeight="40" prefWidth="300" style="-fx-border-radius: 0px; -fx-background-radius: 0px; -fx-padding: 0 0 0 10px" />
+
+                            <Label layoutX="600" layoutY="50" style="-fx-font-size: 13px; -fx-text-fill: gray" text="Booking notes" />
+                            <TextArea fx:id="additional_message" layoutX="600" layoutY="75" prefHeight="60" prefWidth="300" promptText="Notes about your order, e.g. Your Meeting location and others info." style="-fx-border-radius: 0px; -fx-background-radius: 0px; -fx-text-alignment: center" />
+
+
+                        </children>
+                    </AnchorPane>
+
+                    <AnchorPane prefWidth="1015">
+                        <children>
+                            <Label layoutX="20" layoutY="5" style="-fx-font-size: 13px; -fx-text-fill: gray" text="Phone number *" />
+                            <MFXTextField fx:id="phn_num" floatMode="DISABLED" layoutX="20" layoutY="30" prefHeight="40" prefWidth="350" style="-fx-border-radius: 0px; -fx-background-radius: 0px;  -fx-padding: 0 0 0 10px" />
+                     <Label layoutX="598.0" layoutY="6.0" style="-fx-text-fill: gray; -fx-font-size: 13px;" text="Starting Date *" />
+                     <MFXDatePicker fx:id="startingDate" layoutX="597.0" layoutY="31.0" style="-fx-padding: 0 0 0 10px; -fx-background-radius: 0px; -fx-border-radius: 0px;" />
+                        </children>
+                    </AnchorPane>
+
+                    <AnchorPane prefWidth="1015">
+                        <children>
+
+                            <Label layoutX="20" layoutY="5" style="-fx-font-size: 13px; -fx-text-fill: gray" text="Email adress *" />
+                            <MFXTextField fx:id="email" floatMode="DISABLED" layoutX="20" layoutY="30" prefHeight="40" prefWidth="350" style="-fx-border-radius: 0px; -fx-background-radius: 0px;  -fx-padding: 0 0 0 10px" />
+                        </children>
+                    </AnchorPane>
+
+
+                    <AnchorPane prefWidth="1015">
+                        <children>
+
+                            <Label layoutX="20" layoutY="40" style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px" text="Your Booking" />
+                        </children>
+                    </AnchorPane>
+<!--               <Separator prefWidth="200.0" />-->
+                </children>
+            </VBox>
+        </MFXScrollPane>
+    </children>
+</AnchorPane>

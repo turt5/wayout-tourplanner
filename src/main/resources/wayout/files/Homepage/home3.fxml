@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Homepage.Home3Controller">
+   <children>
+      <MediaView fx:id="bgVideo" fitHeight="750.0" fitWidth="1200.0">
+
+      </MediaView>
+      <ImageView fitHeight="93.0" fitWidth="156.0" layoutX="29.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="50.0" layoutY="204.0" prefHeight="36.0" prefWidth="219.0" text="Welcome to Wayout" textFill="WHITE">
+         <font>
+            <Font name="Poppins SemiBold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="240.0" prefHeight="134.0" prefWidth="299.0" text="We Take Care of Your Trip" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Poppins Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="387.0" prefHeight="61.0" prefWidth="386.0" text="We belive in a travelling experiance by providing our tour plan that suits your the best!" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Poppins Regular" size="15.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="loginBtn" layoutX="50.0" layoutY="483.0" prefHeight="46.0" prefWidth="182.0" style="-fx-background-color: #40db69; -fx-border-radius: 0px;" text="BOOK A TRIP">
+         <font>
+            <Font name="Poppins Bold" size="11.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_RIGHT" />
+         </graphic>
+      </MFXButton>
+   </children>
+</AnchorPane>

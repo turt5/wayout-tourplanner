@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Homepage.HomeController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1200.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Homepage.png" />
+         </image>
+      </ImageView>
+      <MFXButton fx:id="register" layoutX="1022.0" layoutY="34.0" onAction="#registerClicked" styleClass="login-button" stylesheets="@../Css%20library/homepage.css" text="Register" />
+      <Label fx:id="hotels" layoutX="864.0" layoutY="300.0" styleClass="icon-labels" stylesheets="@../Css%20library/homepage.css" text="Hotel" />
+      <Label fx:id="trip" layoutX="959.0" layoutY="300.0" styleClass="icon-labels" stylesheets="@../Css%20library/homepage.css" text="Trips" />
+      <Label fx:id="car" layoutX="1049.0" layoutY="300.0" styleClass="icon-labels" stylesheets="@../Css%20library/homepage.css" text="Car Hire" />
+      <ImageView fx:id="trips" fitHeight="50.0" fitWidth="50.0" layoutX="951.0" layoutY="224.0" onMouseClicked="#tripsClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/passport.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carHire" fitHeight="50.0" fitWidth="50.0" layoutX="1049.0" layoutY="224.0" onMouseClicked="#carHireClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sports-car.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hotel" fitHeight="50.0" fitWidth="50.0" layoutX="857.0" layoutY="224.0" onMouseClicked="#hotelClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hotell.png" />
+         </image>
+      </ImageView>
+      <MFXButton fx:id="signIn" layoutX="859.0" layoutY="34.0" onAction="#signInClicked" styleClass="login-button" stylesheets="@../Css%20library/homepage.css" text="Sign in" />
+      <MFXTextField fx:id="searchBox" floatMode="DISABLED" layoutX="860.0" layoutY="463.0" prefHeight="49.0" prefWidth="269.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MFXTextField>
+      <MFXButton fx:id="searchButton" layoutX="861.0" layoutY="542.0" onAction="#searchClicked" prefHeight="50.0" prefWidth="269.0" styleClass="searchBox" stylesheets="@../Css%20library/homepage.css" text="Search your destination" />
+      <Label layoutX="856.0" layoutY="382.0" prefHeight="40.0" prefWidth="261.0" styleClass="Ntext" stylesheets="@../Css%20library/homepage.css" text="Travel safely with wayout!" />
+   </children>
+</AnchorPane>

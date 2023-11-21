@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_anchorPane" prefHeight="750.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.Admin_Manage_Packages">
+    <children>
+        <AnchorPane prefHeight="100" prefWidth="1015" style="-fx-background-color: Gray">
+            <AnchorPane prefHeight="100" prefWidth="1015">
+                <StackPane prefHeight="100" prefWidth="1020.0" style="-fx-background-color: #6db784;">
+                    <Label text="Tour Packages" textFill="WHITE">
+                        <font>
+                            <Font name="Arial Rounded MT Bold" size="29.0" />
+                        </font></Label>
+                </StackPane>
+            </AnchorPane>
+
+            <MFXScrollPane hbarPolicy="NEVER" layoutY="100" prefHeight="750" prefWidth="1020.0">
+                <AnchorPane layoutY="200" prefWidth="1015">
+                    <children>
+                        <VBox fx:id="packages_vbox" prefWidth="1010" style="-fx-padding: 0 0 90 0px" />
+                    </children>
+                </AnchorPane>
+            </MFXScrollPane>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+anchr{
+    -fx-background-color: rgba(255, 255, 255, 0)
+}
+anchr:hover{
+    -fx-background-color: rgba(56, 1, 1, 0.2)
+}

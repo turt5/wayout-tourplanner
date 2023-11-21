@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="parent" prefHeight="750" prefWidth="1020.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.ExploreMaps">
+    <children>
+        <MFXTextField fx:id="locationNameBox" floatMode="DISABLED" layoutX="235.0" layoutY="116.0" prefHeight="50" prefWidth="400" promptText="Enter a Location name to explore the map" style="-fx-font-size: 13px; -fx-padding: 0 0 0 10px; -fx-background-color: white; -fx-font-family: 'Arial';-fx-background-radius: 0px;-fx-border-radius: 0px; " />
+        <MFXButton fx:id="searchButton" layoutX="651.0" layoutY="115.0" prefHeight="50" prefWidth="100" style="-fx-background-color: #f9e45b; -fx-background-radius: 0px; -fx-border-radius: 0px; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-family: 'Arial Rounded MT Bold';" text="Search">
+         <font>
+            <Font size="1.0" />
+         </font></MFXButton>
+      <WebView fx:id="webpage" layoutX="2.0" layoutY="205.0" prefHeight="540.0" prefWidth="1014.0" />
+      <Label fx:id="locationNameSearched" alignment="CENTER" contentDisplay="CENTER" layoutX="-65.0" layoutY="156.0" prefHeight="50.0" prefWidth="1000.0" style="-fx-font-size: 15px; -fx-font-family: 'Arial Rounded MT Bold'" />
+      <AnchorPane prefHeight="100.0" prefWidth="1020.0" style="-fx-background-color: #6db784;">
+         <children>
+            <Label layoutX="337.0" layoutY="32.0" text="Find a place and Explore it." textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

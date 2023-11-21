@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXRadioButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1010.0" style="fx-background-color: #4e4364;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.admindashboard.BanUserController">
+    <children>
+        <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="180.0" prefWidth="997.0" styleClass="app_users_data_field" stylesheets="@CSS.css">
+            <children>
+                <MFXTextField floatMode="DISABLED" layoutX="141.0" layoutY="70.0" prefHeight="40.0" prefWidth="619.0" promptText="User Name" />
+                <MFXButton layoutX="781.0" layoutY="70.0" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: White" text="Search" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="6.0" layoutY="191.0" prefHeight="554.0" prefWidth="995.0" style="fx-background-color: #00d38b;">
+            <children>
+                <AnchorPane layoutX="6.0" layoutY="52.0" prefHeight="488.0" prefWidth="979.0">
+                    <styleClass>
+                        <String fx:value="side_Menu" />
+                        <String fx:value="app_users_data_field" />
+                    </styleClass>
+               <children>
+                  <AnchorPane layoutX="-8.0" layoutY="-6.0" prefHeight="40.0" prefWidth="997.0" styleClass="app_users_data_field" stylesheets="@CSS.css">
+                     <children>
+                        <Label layoutX="149.0" layoutY="6.0" text="Name" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="440.0" layoutY="6.0" text="Mail Address" textFill="#faf7f7">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="816.0" layoutY="6.0" text="City" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-6.0" layoutY="39.0" prefHeight="463.0" prefWidth="997.0" styleClass="weather_bg" stylesheets="@CSS.css" />
+               </children>
+                </AnchorPane>
+                <MFXRadioButton layoutX="22.0" layoutY="6.0" prefHeight="20.0" prefWidth="76.0" selected="true" text="Users">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="Users" />
+                    </toggleGroup>
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </MFXRadioButton>
+                <MFXRadioButton layoutX="144.0" layoutY="6.0" prefHeight="20.0" prefWidth="76.0" selected="true" text="Guide" toggleGroup="$Users">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </MFXRadioButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

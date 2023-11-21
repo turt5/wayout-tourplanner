@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1199.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.LoginPage.ResetController">
+   <children>
+      <ImageView fitHeight="756.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ResetPage.png" />
+         </image>
+      </ImageView>
+      <MFXTextField fx:id="EmailBox" floatMode="BORDER" floatingText="  Email" layoutX="676.0" layoutY="271.0" prefHeight="50.0" prefWidth="319.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" />
+      <MFXButton fx:id="submitButton" buttonType="RAISED" depthLevel="LEVEL3" layoutX="676.0" layoutY="340.0" onAction="#submitClicked" prefHeight="38.0" prefWidth="148.0" style="-fx-background-radius: 10; -fx-border-radius: 5; -fx-background-color: #ffca40;" text="Submit" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </MFXButton>
+      <Label layoutX="678.0" layoutY="424.0" prefHeight="38.0" prefWidth="252.0" text="If you're still having problems, please ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="CancelButton" buttonType="RAISED" depthLevel="LEVEL3" layoutX="847.0" layoutY="340.0" onAction="#cancelClicked" prefHeight="38.0" prefWidth="148.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #ffca40;" text="Cancel" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </MFXButton>
+      <Hyperlink fx:id="ContactLink" layoutX="891.0" layoutY="431.0" onAction="#contactClicked" text="contact us." textFill="#36bc67" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Hyperlink>
+      <MFXButton fx:id="ExploreButton" buttonType="RAISED" layoutX="589.0" layoutY="34.0" onAction="#exploreClicked" prefHeight="18.0" prefWidth="68.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #ffca40;" text="Explore" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </MFXButton>
+      <Label layoutX="677.0" layoutY="451.0" prefHeight="38.0" prefWidth="162.0" text="Don't have an account?">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="SignupLink" layoutX="813.0" layoutY="457.0" onAction="#signupClicked" text="Create account." textFill="#36bc67" underline="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

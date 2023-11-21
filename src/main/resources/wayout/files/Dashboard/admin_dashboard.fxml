@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" stylesheets="@CSS.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.Admin_Dashboard">
+   <children>
+      <AnchorPane prefHeight="750.0" prefWidth="180.0" styleClass="side_Menu">
+         <children>
+            <Circle fx:id="profile_pic" fill="DODGERBLUE" layoutX="37.0" layoutY="37.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="74.0" layoutY="24.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+
+            </Label>
+
+<!--            side panel-->
+
+            <Label fx:id="home" layoutX="66.0" layoutY="171.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Home" textFill="#fafafa" />
+            <Label fx:id="manage_user" layoutX="60.0" layoutY="211.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Manage User" textFill="#fafafa" />
+            <Label fx:id="earnings" layoutX="69.0" layoutY="251.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Earn" textFill="#fafafa" />
+            <Label fx:id="inbox" layoutX="69.0" layoutY="284.0" onMouseClicked="#inboxCLicked" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Inbox" textFill="#fafafa" />
+            <Label fx:id="add_package" layoutX="44.0" layoutY="316.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Add Package" textFill="#fafafa" />
+            <Label fx:id="guide_applications" layoutX="44.0" layoutY="348.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Guide Requests" textFill="#fafafa" />
+            <Label fx:id="manage_packages" layoutX="44.0" layoutY="380.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Manage Packages" textFill="#fafafa" />
+            <Label fx:id="manage_guides" layoutX="44.0" layoutY="412.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Manage Guides" textFill="#fafafa" />
+            <Label fx:id="logout" layoutX="66.0" layoutY="693.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="LogOut" textFill="#fafafa" />
+            <Label fx:id="manage_orders" layoutX="42.0" layoutY="442.0" styleClass="menu-bar-items" stylesheets="@CSS.css" text="Manage Orders" textFill="#fafafa" />
+
+<!--            <Label fx:id="Home" layoutX="30" layoutY="150" style="-fx-text-fill: white; -fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 13px;" text=" Home">-->
+<!--            </Label>-->
+
+<!--            <Label fx:id="Ban a User" layoutX="30" layoutY="150" style="-fx-text-fill: white; -fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 13px;" text=" Home">-->
+<!--            </Label>-->
+
+<!--            <Label fx:id="Trips" layoutX="30" layoutY="150" style="-fx-text-fill: white; -fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 13px;" text=" Home">-->
+<!--            </Label>-->
+
+
+
+
+
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainPanel" layoutX="180.0" prefHeight="750.0" prefWidth="1010.0">
+         <children>
+            <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="115.0" prefWidth="1008.0" styleClass="weather_bg" stylesheets="@CSS.css">
+               <children>
+                  <Label layoutX="23.0" layoutY="14.0" text="Welcome Admin Dashboard">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="weather" layoutX="23.0" layoutY="38.0">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="location_info" layoutX="23.0" layoutY="78.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="6.0" layoutY="128.0" prefHeight="182.0" prefWidth="1008.0" styleClass="app_users_data_field" stylesheets="@CSS.css">
+               <children>
+                  <Label layoutX="146.0" layoutY="134.0" text="Users" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="468.0" layoutY="133.0" text="Guides" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="817.0" layoutY="136.0" text="Trips" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Line endX="12.4000244140625" endY="92.79995727539062" layoutX="321.0" layoutY="52.0" startX="12.4000244140625" startY="-17.4000244140625" />
+                  <Line endX="12.4000244140625" endY="92.79995727539062" layoutX="678.0" layoutY="58.0" startX="12.4000244140625" startY="-17.4000244140625" />
+                  <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="149.0" layoutY="16.0">
+                     <image>
+                        <Image url="@friends.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="477.0" layoutY="16.0">
+                     <image>
+                        <Image url="@tour.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="817.0" layoutY="16.0">
+                     <image>
+                        <Image url="@map.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="user_count" alignment="CENTER" layoutX="134.0" layoutY="92.0" prefHeight="35.0" prefWidth="84.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="guides_count" alignment="CENTER" layoutX="462.0" layoutY="92.0" prefHeight="35.0" prefWidth="84.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tour_package_count" alignment="CENTER" layoutX="803.0" layoutY="92.0" prefHeight="35.0" prefWidth="84.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="319.0" prefHeight="426.0" prefWidth="1008.0" styleClass="weather_bg" stylesheets="@CSS.css">
+               <children>
+                  <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="418.0" prefWidth="488.0" styleClass="graphs_data_field">
+                     <children>
+                        <LineChart fx:id="linearChart" layoutX="-6.0" layoutY="60.0" prefHeight="344.0" prefWidth="472.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                        <Label layoutX="28.0" layoutY="25.0" text="Users Activity" textFill="#d4d2d2">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="505.0" layoutY="5.0" prefHeight="418.0" prefWidth="498.0" styleClass="graphs_data_field">
+                     <children>
+                        <Label layoutX="28.0" layoutY="25.0" prefHeight="26.0" prefWidth="160.0" text="Trips In Cities" textFill="#d4d2d2">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <PieChart layoutX="35.0" layoutY="60.0" prefHeight="344.0" prefWidth="427.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

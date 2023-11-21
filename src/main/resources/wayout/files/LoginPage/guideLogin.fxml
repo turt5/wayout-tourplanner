@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressBar?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1200.0" style="-fx-border-radius: 30; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.LoginPage.GuideLoginController">
+    <children>
+        <ImageView depthTest="ENABLE" fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/Login.png" />
+            </image>
+        </ImageView>
+        <MFXButton fx:id="SignIn" layoutX="676.0" layoutY="403.0" onAction="#signInClicked" prefHeight="60.0" prefWidth="350.0" rippleAnimateShadow="true" rippleColor="#5b5b5b" rippleRadiusMultiplier="4.0" style="-fx-background-color: #ffca40; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Sign in as Guide" textAlignment="CENTER">
+            <font>
+                <Font name="Calibri Bold" size="16.0" />
+            </font></MFXButton>
+        <MFXTextField fx:id="EmailorUsernameBox" floatMode="BORDER" floatingText="  Email/Username" floatingTextGap="10.0" graphicTextGap="15.0" layoutX="676.0" layoutY="217.0" style="-fx-padding: 0 15 0 15px;" prefHeight="60.0" prefWidth="350.0" styleClass="text-field" stylesheets="@../Css library/loginpage.css" />
+        <MFXPasswordField fx:id="passwordBox" allowPaste="true" floatMode="BORDER" floatingText="  Password" graphicTextGap="15.0" hideCharacter="*" layoutX="676.0" layoutY="291.0" style="-fx-padding: 0 15 0 15px;" prefHeight="60.0" prefWidth="350.0" styleClass="text-field" stylesheets="@../Css library/loginpage.css" />
+        <MFXButton fx:id="signinGoogle" layoutX="676.0" layoutY="535.0" onAction="#signinGoogleClicked" prefHeight="60.0" prefWidth="350.0" rippleAnimateShadow="true" rippleColor="#5b5b5b" rippleRadiusMultiplier="4.0" style="-fx-background-color: #ffca40; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="     Sign in with Google" textAlignment="CENTER">
+            <font>
+                <Font name="Corbel Bold" size="12.0" />
+            </font>
+        </MFXButton>
+        <JFXCheckBox fx:id="remember" layoutX="676.0" layoutY="367.0" onAction="#rememberMeSelected" text="Remember me" />
+        <Hyperlink fx:id="forgotPass" layoutX="929.0" layoutY="364.0" onAction="#forgotPassClicked" text="Forgot password" textFill="RED" underline="true" />
+        <FontAwesomeIconView glyphName="GOOGLE" layoutX="779.0" layoutY="572.0" size="17.0">
+            <fill>
+                <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startY="0.6350710900473934">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color green="0.10000000149011612" blue="1.0" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.032894738018512726" green="0.7105262875556946" blue="0.2700657844543457" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill></FontAwesomeIconView>
+      <Label layoutX="685.0" layoutY="630.0" text="Are you a Traveler? " textFill="#c7c4c4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="TravelaerLogin" layoutX="813.0" layoutY="626.0" onAction="#TravelerLoginClicked" text="Traveler Login." textFill="#6db784">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+      <AnchorPane fx:id="eraser" layoutX="676.0" layoutY="485.0" prefHeight="40.0" prefWidth="360.0" style="-fx-background-color: white;">
+         <children>
+            <MFXProgressBar layoutX="55.0" layoutY="17.0" prefWidth="250.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="679.0" layoutY="652.0" prefHeight="47.0" prefWidth="200.0" style="-fx-background-color: white;" />
+        <MFXButton fx:id="backButton" layoutX="579.0" layoutY="34.0" onAction="#backButtonClicked" style="-fx-background-color: #ffca40;" text="&lt; Back">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </MFXButton>
+
+        <ImageView fx:id="loginImageLogo" fitHeight="406.0" fitWidth="475.0" layoutX="51.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/Login-rafiki.png" />
+            </image></ImageView>
+        <Label layoutX="67.0" layoutY="522.0" prefHeight="48.0" prefWidth="371.0" text="Get ready for your next tour with us!" textFill="#e5ff00">
+            <font>
+                <Font name="Segoe UI" size="19.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

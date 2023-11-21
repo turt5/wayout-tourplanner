@@ -1,0 +1,173 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import java.lang.*?>-->
+<!--<?import java.util.*?>-->
+<!--<?import javafx.scene.*?>-->
+<!--<?import javafx.scene.control.*?>-->
+<!--<?import javafx.scene.layout.*?>-->
+
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import io.github.palexdev.materialfx.controls.MFXButton?>-->
+<!--<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>-->
+<!--<?import io.github.palexdev.materialfx.controls.MFXTextField?>-->
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="wayout.files.Dashboard.DHome"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--    <MFXScrollPane fx:id="main_scrollPane" prefWidth="1020" prefHeight="750" hbarPolicy="NEVER"-->
+<!--                   vbarPolicy="AS_NEEDED">-->
+<!--        <AnchorPane style="-fx-background-color: white" prefWidth="1020">-->
+<!--            <children>-->
+<!--                <Label text="Welcome home!"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 22;"-->
+<!--                       layoutX="10" layoutY="20"/>-->
+<!--                <Label style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 30;"-->
+<!--                       layoutX="10" layoutY="50"-->
+<!--                       fx:id="weatherLbl"/>-->
+
+<!--                <Label style="-fx-font-family: 'Inter'; -fx-font-size: 18;"-->
+<!--                       layoutX="10" layoutY="85"-->
+<!--                       fx:id="userLoc"/>-->
+
+<!--                <Hyperlink text=" Notifications" layoutX="890" layoutY="20"-->
+<!--                           style="-fx-text-fill: Black; -fx-font-size: 13; -fx-font-family: 'Arial Rounded MT Bold'">-->
+<!--                    <graphic>-->
+<!--                        <FontAwesomeIconView glyphName="BELL" size="15" fill="Black"/>-->
+<!--                    </graphic>-->
+<!--                </Hyperlink>-->
+
+
+<!--                <StackPane layoutY="160" layoutX="10">-->
+<!--                    <ImageView layoutX="10" layoutY="60" fitWidth="990" fitHeight="200"-->
+<!--                               style="-fx-padding: 10px">-->
+<!--                        <Image url="@image2.jpg">-->
+
+<!--                        </Image>-->
+
+<!--                    </ImageView>-->
+<!--                    <AnchorPane prefHeight="100" prefWidth="990">-->
+<!--                        <children>-->
+<!--                            <MFXTextField layoutX="150" layoutY="80" prefWidth="590" prefHeight="50"-->
+<!--                                          floatMode="DISABLED" promptText="Where to next?"-->
+<!--                                          style="-fx-background-color: white; -fx-border-color: white; -fx-border-radius: 4px; -fx-font-size: 14px; -fx-font-family: 'Arial Rounded MT Bold'; -fx-padding: 0 0 0 20px; -fx-border-radius: 30px; -fx-background-radius: 30px"-->
+<!--                                          fx:id="searchBox"/>-->
+<!--                            <MFXButton fx:id="searchBtn" layoutX="760" text="" layoutY="80" prefWidth="100"-->
+<!--                                       prefHeight="50"-->
+<!--                                       style="-fx-font-family: 'Arial Rounded MT Bold';-fx-padding: 0 5 0 5px; -fx-font-size: 13px ;-fx-background-radius: 30px; -fx-border-radius: 30px">-->
+<!--                                <graphic>-->
+<!--                                    <FontAwesomeIconView glyphName="SEARCH" size="16"-->
+<!--                                                         fontSmoothingType="LCD" fill="Black"/>-->
+<!--                                </graphic>-->
+<!--                            </MFXButton>-->
+<!--                        </children>-->
+<!--                    </AnchorPane>-->
+
+<!--                </StackPane>-->
+
+
+<!--                <Label text="Where to go, right now"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px" layoutX="10"-->
+<!--                       layoutY="390"/>-->
+<!--                <Label text="Spots at the top of travelers’ must-go lists"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT';-fx-text-fill: gray; -fx-font-size: 12px"-->
+<!--                       layoutX="10" layoutY="420"/>-->
+
+<!--                <MFXScrollPane vbarPolicy="NEVER" hbarPolicy="AS_NEEDED" layoutX="10" layoutY="450"-->
+<!--                               maxHeight="300" prefWidth="990">-->
+<!--                    &lt;!&ndash;                               <AnchorPane prefWidth="30000" prefHeight="200" style="-fx-background-color: blue"></AnchorPane>&ndash;&gt;-->
+<!--                    <HBox fx:id="card_must_go_Lists" maxHeight="300"-->
+<!--                          style="-fx-background-color: #ffffff"></HBox>-->
+<!--                </MFXScrollPane>-->
+
+
+<!--                <Label text="You might like this"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px" layoutX="10"-->
+<!--                       layoutY="820"/>-->
+<!--                <Label text="Popular places to stay"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT';-fx-text-fill: gray; -fx-font-size: 12px"-->
+<!--                       layoutX="10" layoutY="850"/>-->
+
+<!--                <MFXScrollPane vbarPolicy="NEVER" hbarPolicy="AS_NEEDED" layoutX="10" layoutY="890"-->
+<!--                               prefHeight="300" prefWidth="990">-->
+<!--                    &lt;!&ndash;                               <AnchorPane prefWidth="30000" prefHeight="200" style="-fx-background-color: blue"></AnchorPane>&ndash;&gt;-->
+<!--                    <HBox fx:id="popular_hotels" prefHeight="300"-->
+<!--                          style="-fx-background-color: #ffffff"></HBox>-->
+<!--                </MFXScrollPane>-->
+
+
+<!--                <Label text="Recently viewed places"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px" layoutX="10"-->
+<!--                       layoutY="1250"/>-->
+<!--                <Label text="Popular places to stay"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT';-fx-text-fill: gray; -fx-font-size: 12px"-->
+<!--                       layoutX="10" layoutY="1280"/>-->
+
+<!--                <MFXScrollPane vbarPolicy="NEVER" hbarPolicy="AS_NEEDED" layoutX="10" layoutY="1320"-->
+<!--                               prefHeight="300" prefWidth="990">-->
+<!--                    &lt;!&ndash;                               <AnchorPane prefWidth="30000" prefHeight="200" style="-fx-background-color: blue"></AnchorPane>&ndash;&gt;-->
+<!--                    <HBox fx:id="recently_viewed_places" prefHeight="300" prefWidth="10000"-->
+<!--                          style="-fx-background-color: #29f14a"></HBox>-->
+<!--                </MFXScrollPane>-->
+
+
+<!--                <AnchorPane prefWidth="990" prefHeight="200" layoutX="10" layoutY="1670"-->
+<!--                            style="-fx-background-color: #99d5d3">-->
+<!--                    <children>-->
+<!--                        <Label text="Your next trip starts here"-->
+<!--                               style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px"-->
+<!--                               layoutX="20" layoutY="20"/>-->
+<!--                        <Label text="Top-rated hotels that earned Best of the Best crown."-->
+<!--                               style="-fx-font-family: 'Arial Rounded MT';-fx-text-fill: #5a6c67; -fx-font-size: 12px"-->
+<!--                               layoutX="21" layoutY="50"/>-->
+<!--                        <ImageView fitHeight="200" fitWidth="550" layoutX="450">-->
+<!--                            <Image url="@sugandha-beach-cox-s.png"></Image>-->
+<!--                        </ImageView>-->
+
+<!--                        <MFXButton layoutX="20" layoutY="120" text="See the list"-->
+<!--                                   style="-fx-background-color: #f9e45b; -fx-font-size: 13px ;-fx-border-radius: 30px; -fx-background-radius: 30px"-->
+<!--                                   prefHeight="50" prefWidth="110" fx:id="see_best_hotel_listBtn"/>-->
+<!--                    </children>-->
+<!--                </AnchorPane>-->
+
+
+<!--                <Label text="Ways to tour Dhaka City"-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 18px" layoutX="10"-->
+<!--                       layoutY="1950"/>-->
+<!--                <Label text="Book these experiences for a close-up look at Dhaka City."-->
+<!--                       style="-fx-font-family: 'Arial Rounded MT';-fx-text-fill: gray; -fx-font-size: 12px"-->
+<!--                       layoutX="10" layoutY="1980"/>-->
+
+<!--                <MFXScrollPane vbarPolicy="NEVER" hbarPolicy="AS_NEEDED" layoutX="10" layoutY="2020"-->
+<!--                               prefHeight="300" prefWidth="990">-->
+<!--                    &lt;!&ndash;                               <AnchorPane prefWidth="30000" prefHeight="200" style="-fx-background-color: blue"></AnchorPane>&ndash;&gt;-->
+<!--                    <HBox fx:id="ways_to_tour_Dhaka_city" prefHeight="300" prefWidth="10000"-->
+<!--                          style="-fx-background-color: #4418c7"></HBox>-->
+<!--                </MFXScrollPane>-->
+
+
+<!--                <AnchorPane prefWidth="990" prefHeight="410" layoutX="10" layoutY="2450"-->
+<!--                            style="-fx-background-color: #99d5d3">-->
+<!--                    <children>-->
+<!--                        <ImageView layoutX="15" layoutY="15" fitHeight="380" fitWidth="400">-->
+<!--                            <Image url="@poorP.jpg"></Image>-->
+<!--                        </ImageView>-->
+<!--                        <Label text="Wayout Foundation" layoutX="660" style="-fx-font-size: 14px"-->
+<!--                               layoutY="45"/>-->
+<!--                        <Label text="Making a Difference in Bangladesh: Wayout Supports Local Charities"-->
+<!--                               wrapText="true" maxWidth="350" textAlignment="CENTER" layoutX="540"-->
+<!--                               style="-fx-font-size: 16px; -fx-font-family: 'Arial Rounded MT Bold'"-->
+<!--                               layoutY="75"/>-->
+<!--                        <Label text="Wayout is dedicated to making a positive impact in the communities where we operate, and that's why we've established a foundation to support local charities in Bangladesh. Through our foundation, we provide financial assistance to organizations that are working to improve the lives of people in our country. Whether it's supporting education, healthcare, or social services, we're committed to making a difference in Bangladesh. Stay tuned for updates on the organizations we're supporting and the impact we're making in our community."-->
+<!--                               layoutX="485" maxWidth="470" wrapText="true" style="-fx-font-size: 14px"-->
+<!--                               layoutY="150"/>-->
+<!--                        <MFXButton text="Donate" style="-fx-background-color: #f9e45b;-fx-font-size: 13px;-fx-background-radius: 30px;-fx-padding: 10 20 10 20px; -fx-border-radius: 30px" prefHeight="40" layoutX="660" layoutY="350"/>-->
+<!--                    </children>-->
+<!--                </AnchorPane>-->
+
+
+<!--            </children>-->
+<!--        </AnchorPane>-->
+<!--    </MFXScrollPane>-->
+
+<!--</AnchorPane>-->

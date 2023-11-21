@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1020.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wayout.files.Dashboard.AddPackage">
+    <children>
+        <AnchorPane prefHeight="100.0" prefWidth="1020.0" style="-fx-background-color: #6db784;">
+            <children>
+                <Label layoutX="410.0" layoutY="22.0" prefHeight="56.0" prefWidth="200.0" text="Add Packages" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="268.0" layoutY="139.0" prefHeight="26.0" prefWidth="128.0" text="Package Title">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="nameBox" floatMode="DISABLED" layoutX="265.0" layoutY="168.0" prefHeight="35.0" prefWidth="700.0" promptText="Package title" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <Label layoutX="268.0" layoutY="214.0" prefHeight="26.0" prefWidth="128.0" text="City / Town">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="cityBox" floatMode="DISABLED" layoutX="265.0" layoutY="243.0" prefHeight="35.0" prefWidth="700.0" promptText="Enter Package Area" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <Label layoutX="268.0" layoutY="290.0" prefHeight="26.0" prefWidth="128.0" text="Package Price">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="priceBox" floatMode="DISABLED" layoutX="265.0" layoutY="319.0" prefHeight="35.0" prefWidth="700.0" promptText="Total Price of the package." style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <Label layoutX="268.0" layoutY="361.0" prefHeight="26.0" prefWidth="128.0" text="Package Duration">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font>
+        </Label>
+        <MFXTextField fx:id="durationBox" floatMode="DISABLED" layoutX="265.0" layoutY="390.0" prefHeight="35.0" prefWidth="700.0" promptText="How many days" style="-fx-border-color: Black; -fx-padding: 0 0 0 10px;" />
+        <MFXButton fx:id="cancelBtn" layoutX="788.0" layoutY="684.0" onAction="#cancelClicked" prefHeight="39.0" prefWidth="86.0" style="-fx-border-color: white; -fx-border-radius: 10; -fx-background-radius: 10;" text="Cancel">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="17.0" />
+            </font>
+        </MFXButton>
+        <MFXButton fx:id="addBtn" layoutX="885.0" layoutY="684.0" onAction="#addClicked" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color:#ffca40; -fx-border-radius: 10; -fx-border-color: black; -fx-background-radius: 10;" text="Add">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="17.0" />
+            </font>
+        </MFXButton>
+        <Label layoutX="643.0" layoutY="690.0" prefHeight="26.0" prefWidth="128.0" text="Add your package." textFill="#8c8484">
+            <font>
+                <Font name="Arial" size="15.0" />
+            </font>
+        </Label>
+        <MFXButton fx:id="photoBox" layoutX="67.0" layoutY="369.0" style="-fx-border-color: Gray; -fx-background-color: #f9e45b; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Upload Area Photo">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </MFXButton>
+      <Label layoutX="268.0" layoutY="435.0" prefHeight="26.0" prefWidth="146.0" text="Package Description">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionBox" layoutX="265.0" layoutY="468.0" prefHeight="200.0" prefWidth="700.0" promptText="Write your package detais within 100 words." style="-fx-border-color: black; -fx-border-radius: 10px;" wrapText="true" />
+      <ImageView fx:id="imgview" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
